@@ -71,7 +71,7 @@ During my internship, I participated in five events. Each one was a memorable ex
 
 
 ### [Event 5](4.5-Event5/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** AWS Cloud Mastery Series #3: ​Theo AWS Well-Architected Security Pillar
 
 &emsp;**Date & Time:** 08:30, November 29, 2025  
 
