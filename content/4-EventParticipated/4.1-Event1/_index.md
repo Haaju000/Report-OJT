@@ -12,7 +12,9 @@ pre: " <b> 4.1. </b> "
 ### Event Objectives
 
 - Building a generation of high-quality AWS Builders for Vietnam
+
 - Equipping practical skills in Cloud, DevOps, AI/ML, Security, Data & Analytics
+
 - Connecting students with the AWS Study Group community of 47,000+ members and AWS partner businesses
 
 ### Speakers

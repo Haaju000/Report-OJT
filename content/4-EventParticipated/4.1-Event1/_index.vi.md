@@ -12,7 +12,9 @@ pre: " <b> 4.1. </b> "
 ### Mục Đích Của Sự Kiện
 
 - Xây dựng thế hệ AWS Builders chất lượng cao cho Việt Nam.
+
 - ​Trang bị kỹ năng thực chiến về Cloud, DevOps, AI/ML, Security, Data & Analytics.
+
 - ​Kết nối sinh viên với cộng đồng AWS Study Group 47,000+ thành viên và các doanh nghiệp đối tác AWS.
 
 ### Danh Sách Diễn Giả
@@ -56,5 +58,5 @@ Tham gia workshop **"Kick-off AWS FCJ Workforce - FPTU OJT FALL 2025"** là mộ
 
 - Ứng dụng công cụ hiện đại của AWS
 
-- Kết nối, trao đổi trao đổi trực tiếp với các diễn giả, đồng đội
+- Kết nối, trao đổi trao đổi trực tiếp với các diễn giả và đồng đội
 

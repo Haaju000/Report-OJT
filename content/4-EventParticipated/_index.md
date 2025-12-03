@@ -26,7 +26,7 @@ During my internship, I participated in five events. Each one was a memorable ex
 ---
 
 ### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** WORKSHOP “DATA SCIENCE ON AWS”
+&emsp;**Event Name:** DATA SCIENCE ON AWS
 
 &emsp;**Date & Time:** 09:30, October 16, 2025  
 

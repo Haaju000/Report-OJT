@@ -26,7 +26,7 @@ Trong quá trình thực tập, em đã tham gia 5 events, với mỗi event là
 
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** WORKSHOP “DATA SCIENCE ON AWS”
+&emsp;**Tên sự kiện:** DATA SCIENCE ON AWS
 
 &emsp;**Thời gian:** 9:30 ngày 16/10/2025
 
