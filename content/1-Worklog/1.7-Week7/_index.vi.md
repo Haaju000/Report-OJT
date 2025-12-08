@@ -11,9 +11,7 @@ pre: " <b> 1.7. </b> "
 ### Mục tiêu tuần 7:
 
 * Hiểu và triển khai được hệ thống phân phối tải và mở rộng tự động bằng cách sử dụng ALB/NLB, Target Group và Auto Scaling Group.
-
 * Thiết lập được cơ chế scaling tự động (scheduled và dynamic) để hệ thống tự tăng/giảm số lượng EC2 theo tải thực tế.
-
 * Thực hiện hoàn chỉnh bài lab ALB + ASG, bao gồm cấu hình health check và tự động scale khi CPU vượt ngưỡng (>60%).
 
 ### Các công việc cần triển khai trong tuần này:

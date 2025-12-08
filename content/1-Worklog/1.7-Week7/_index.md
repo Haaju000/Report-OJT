@@ -10,9 +10,7 @@ pre: " <b> 1.7. </b> "
 ### Week 7 Objectives:
 
 * Understand and deploy load distribution and automatic scaling systems using ALB/NLB, Target Group and Auto Scaling Group.
-
 * Set up automatic scaling mechanisms (scheduled and dynamic) so that the system automatically increases/decreases the number of EC2s according to actual load.
-
 * Complete ALB + ASG lab, including health check configuration and automatic scaling when CPU exceeds the threshold (>60%).
 
 ### Tasks to be carried out this week:
