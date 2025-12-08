@@ -20,7 +20,7 @@ pre: " <b> 1.2. </b> "
 | 3   | - Kết nối SSH vào EC2   <br>    - Linux cơ bản (cd, ls, nano, service, install package)                 | 16/08/2025   | 16/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - EBS Volume: attach, detach, snapshot  <br>    - **Thực hành**: tạo volume riêng rồi gắn vào EC2       | 17/08/2025   | 17/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Elastic IP <br>   - EC2 Pricing Models (On-demand, Spot, Reserved)                                    | 18/08/2025   | 18/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab mini:  <br>&emsp; + Deploy web server Apache/Nginx trên EC2 <br>&emsp;   + Mở port 80 <br>&emsp;  + Kiểm tra bằng IP         | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Lab:  <br>&emsp; + Deploy web server Apache/Nginx trên EC2 <br>&emsp;   + Mở port 80 <br>&emsp;  + Kiểm tra bằng IP         | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:

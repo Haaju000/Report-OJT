@@ -17,11 +17,11 @@ pre: " <b> 1.5. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Tổng quan về RDS    <br>    - Nhóm tham số, nhóm tùy chọn       | 06/09/2025 | 06/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Tạo RDS MySQL/PostgreSQL    <br>    - Kết nối từ EC2            | 07/09/2025 | 07/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Sao lưu, đa vùng sẵn sàng, bản sao đọc                          | 08/09/2025 | 08/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - DynamoDB: bảng, khóa phân vùng, khóa sắp xếp                    | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - Lab tuần: <br> + Ứng dụng trên EC2 → Kết nối RDS <br> + Cấu hình sao lưu tự động <br> + Tạo bảng DynamoDB mẫu            | 10/09/2025 | 10/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tổng quan về RDS    <br>    - Nhóm tham số, nhóm tùy chọn       | 06/09/2025 | 06/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Tạo RDS MySQL/PostgreSQL    <br>    - Kết nối từ EC2            | 07/09/2025 | 07/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Sao lưu, đa vùng sẵn sàng, bản sao đọc                          | 08/09/2025 | 08/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - DynamoDB: bảng, khóa phân vùng, khóa sắp xếp                    | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Lab: <br> + Ứng dụng trên EC2 → Kết nối RDS <br> + Cấu hình sao lưu tự động <br> + Tạo bảng DynamoDB mẫu            | 10/09/2025 | 10/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 5:

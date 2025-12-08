@@ -16,11 +16,11 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Concepts of VPC, CIDR, IPv4, subnet <br> - Public and Private subnet                                                        | 08/29/2025 | 08/29/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Route Table <br> - Internet Gateway <br> NAT Gateway                                                                        | 08/30/2025 | 08/30/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Security Group vs NACL <br> - **Practice**: create new VPC + 2 subnets                                                      | 09/01/2025 | 09/01/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Practice complete network configuration <br>&emsp; + VPC <br>&emsp; + Public subnet + EC2 <br>&emsp; + Private subnet       | 02/09/2025 | 02/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - Weekly lab: <br>&emsp; + Deploy 1 public EC2, 1 private EC2 <br>&emsp; + Check private EC2 to access the Internet using NAT         | 03/09/2025 | 03/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Concepts of VPC, CIDR, IPv4, subnet <br> - Public and Private subnet                                                        | 08/29/2025 | 08/29/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Route Table <br> - Internet Gateway <br> NAT Gateway                                                                        | 08/30/2025 | 08/30/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Security Group vs NACL <br> - **Practice**: create new VPC + 2 subnets                                                      | 09/01/2025 | 09/01/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Practice complete network configuration <br>&emsp; + VPC <br>&emsp; + Public subnet + EC2 <br>&emsp; + Private subnet       | 02/09/2025 | 02/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Lab: <br>&emsp; + Deploy 1 public EC2, 1 private EC2 <br>&emsp; + Check private EC2 to access the Internet using NAT        | 03/09/2025 | 03/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Results achieved in week 4:
 
