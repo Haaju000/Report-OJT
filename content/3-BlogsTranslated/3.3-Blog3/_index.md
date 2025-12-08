@@ -5,122 +5,46 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+# Enhance API throttling visibility with Amazon QuickSight
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+This article shows you how to use Amazon QuickSight to create a centralized dashboard that aggregates and displays fragmented data about API throttling from multiple accounts and regions of Amazon Web Services.
+
+This allows you to easily track which APIs are throttled, in which accounts/regions, and assess the impact, adjust the frequency of API calls, and improve the retry logic to optimize operations.
 
 ---
 
-## Architecture Guidance
+## Background
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+- The Amazon Web Services (AWS) Amazon QuickSight (QuickSight) article, titled Enhance API throttling visibility with Amazon QuickSight, discusses using QuickSight to help organizations with multiple AWS accounts and multiple regions centrally monitor and display API throttling information.
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+- “Throttling” here means when AWS APIs exceed a rate limit — causing errors, which can lead to retries, system disruptions, or additional costs if left unchecked.
 
-**The solution architecture is now as follows:**
+## Solution and architecture
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+- The solution uses a hub-and-spoke model: a “data-collection” account acts as a hub to collect data from multiple other AWS accounts (spokes) in multiple Regions.
 
----
+- When an API is throttled in any account, the event is recorded by AWS CloudTrail (with an errorCode like Client.RequestLimitExceeded or ThrottlingException) → sent to Amazon EventBridge → filtered out the throttling event → sent to a custom event bus in the data-collection account.
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+- Then, these events are passed through Amazon Kinesis Data Firehose → saved to Amazon S3 → cataloged by AWS Glue → then used to query using Amazon Athena → the data is used by QuickSight to display on the dashboard.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+- The QuickSight dashboard aggregates information: which APIs are throttled, which AWS services, which accounts/Regions, which IAM users/roles — giving you a clear “big picture” of throttling across the entire organization.
 
----
+## Benefits and When to Use
 
-## Technology Choices and Communication Scope
+- Allows centralized monitoring — instead of having to check each account/region individually, you have a common dashboard.
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+- Helps assess the overall throttling impact: know which APIs, which regions are throttled a lot, from there adjust rates, retry logic, or redesign workflows to avoid waste or errors.
 
----
+- Especially useful for large organizations, multiple AWS accounts or multiple regions, multiple services — where manual monitoring is nearly impossible.
 
-## The Pub/Sub Hub
+- Helps improve reliability, reduce errors due to throttling, control costs and optimize API performance.
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+# Some things to note and requirements
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+- Requires QuickSight Enterprise Edition + enough SPICE capacity to store and process data.
 
----
+- Must have AWS CloudFormation / StackSets deployment rights to deploy resources (EventBridge, Firehose, S3, Glue, etc.) across accounts/regions.
 
-## Core Microservice
-
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
-
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+- Currently the solution only applies to CloudTrail management API calls, as CloudTrail “data events” do not support sending to EventBridge at the time of writing.

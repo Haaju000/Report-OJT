@@ -5,122 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
+# Đại học California Irvine sao lưu hàng petabyte dữ liệu nghiên cứu lên AWS
 
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+University of California, Irvine (UCI) đã dùng rclone kết hợp với các dịch vụ Amazon Web Services (như Amazon S3, IAM, CloudWatch…) để thiết lập một hệ thống backup tập trung, bảo vệ hơn 5 PB dữ liệu nghiên cứu (hơn 250 triệu file) từ hàng trăm máy chủ ở nhiều phòng lab.
 
+Hệ thống này cho phép sao lưu hàng ngày/lần incremental, đồng thời sử dụng chính sách lưu trữ dài hạn và công cụ giám sát để cân bằng giữa hiệu năng, bảo mật và chi phí — cung cấp mô hình sao lưu quy mô lớn và hiệu quả cho các môi trường nghiên cứu.
 ---
 
-## Hướng dẫn kiến trúc
+## Bối cảnh
 
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
+- University of California, Irvine (UCI) có hàng ngàn phòng lab nghiên cứu riêng lẻ với máy chủ lưu trữ dữ liệu — tổng cộng khoảng 100 máy chủ với khoảng 10 PB dữ liệu cần sao lưu.
 
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
+- Trước đó, các giải pháp sao lưu riêng lẻ không đáp ứng được yêu cầu về chi phí, quy mô, và khả năng quản lý tập trung.
 
-**Kiến trúc giải pháp bây giờ như sau:**
+## Giải pháp của UCI
 
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+- UCI phát triển một hệ thống sao lưu tập trung dùng công cụ mã nguồn mở rclone phối hợp với các dịch vụ của Amazon Web Services (AWS), gồm Amazon S3, Amazon S3 Glacier Deep Archive, AWS Identity and Access Management (IAM), Amazon CloudWatch, Amazon Simple Notification Service (SNS), cùng các dịch vụ tự động hóa khác.
 
----
+- Mỗi máy chủ nghiên cứu được phân quyền và cấu hình riêng biệt — với bucket S3 riêng, IAM role riêng, để đảm bảo tách biệt quyền quản trị và bảo mật.
 
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
+- Hệ thống thực hiện sao lưu hàng ngày (incremental) và đồng bộ sâu mỗi tuần (deep sync), đồng thời dùng chính sách lifecycle để chuyển dữ liệu cũ sang lưu trữ dài hạn (Glacier Deep Archive), giúp giảm chi phí lưu trữ lâu dài.
 
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
+- Toàn bộ quy trình — từ định nghĩa công việc (job), lên lịch (cron), sao lưu, bảo mật, giám sát, cảnh báo, đến khôi phục — đều được tự động hóa với mã Python do UCI phát triển.
 
----
+## Kết quả
 
-## Lựa chọn công nghệ và phạm vi giao tiếp
+- Hệ thống đã sao lưu thành công hơn 5 PB dữ liệu, tương đương hơn 250 triệu file.
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+- UCI đạt được sự cân bằng giữa hiệu suất, bảo mật, chi phí và khả năng mở rộng: hệ thống có thể xử lý máy chủ từ vài TB đến vài PB, mà vẫn giữ được vận hành ổn định.
 
----
+- Giải pháp này giúp UCI có lộ trình rõ ràng, quản lý tập trung, và có thể nhân rộng cho các đơn vị khác nếu cần.
 
-## The pub/sub hub
+## Ý nghĩa và gợi ý
 
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
+- Với các tổ chức nghiên cứu hoặc doanh nghiệp có khối lượng dữ liệu lớn, phương pháp của UCI — kết hợp rclone + AWS + tự động hóa — là một mẫu tham chiếu hiệu quả để sao lưu dữ liệu ở quy mô petabyte.
 
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
+- Việc tách biệt quản trị (sysadmin) và quản lý cloud (cloudadmin) giúp tăng cường bảo mật và giảm rủi ro do sai sót.
 
----
-
-## Core microservice
-
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
-
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
-
----
-
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
-
----
-
-## Staging ER7 microservice
-
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
-
----
-
-## Tính năng mới trong giải pháp
-
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+- Cơ chế sao lưu incremental + lifecycle storage giúp tối ưu chi phí lưu trữ dài hạn — phù hợp với dữ liệu nghiên cứu hoặc lưu trữ lâu dài.
