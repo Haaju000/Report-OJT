@@ -21,7 +21,7 @@ pre: " <b> 1.4. </b> "
 | 3   | - Route Table   <br>    - Internet Gateway  <br> NAT Gateway                      | 30/08/2025   | 30/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Security Group vs NACL <br>   - **Thực hành**: tạo VPC mới + 2 subnet           | 01/09/2025   | 01/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Thực hành cấu hình mạng hoàn chỉnh   <br>&emsp;  + VPC <br>&emsp; + Public subnet + EC2 <br>&emsp; + Private subnet         | 02/09/2025   | 02/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab: <br>&emsp;  + Deploy 1 EC2 public, 1 EC2 private <br>&emsp; + Kiểm tra private EC2 có ra Internet bằng NAT        | 03/09/2025   | 03/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp;  + Deploy 1 EC2 public, 1 EC2 private <br>&emsp; + Kiểm tra private EC2 có ra Internet bằng NAT        | 03/09/2025   | 03/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:

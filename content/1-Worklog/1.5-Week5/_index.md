@@ -21,7 +21,7 @@ pre: " <b> 1.5. </b> "
 | 3   | - Create RDS MySQL/PostgreSQL   <br>    - Connect from EC2                                    | 09/07/2025 | 09/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Backup, Multi-AZ, Read Replica                                                              | 09/08/2025 | 09/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - DynamoDB: Table, Partition key, Sort key                                                    | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab: <br> + App on EC2 → Connect RDS <br> + Configure automatic backup <br> + Create sample DynamoDB table                    | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + App on EC2 → Connect RDS <br> + Configure automatic backup <br> + Create sample DynamoDB table                    | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

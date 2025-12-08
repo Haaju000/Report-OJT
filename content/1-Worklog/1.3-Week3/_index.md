@@ -19,7 +19,7 @@ pre: " <b> 1.3. </b> "
 | 3   | - Versioning <br> - Lifecycle Rules <br> - Logging                                | 08/23/2025 | 08/23/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - S3 Storage Classes (Standard, IA, Glacier) <br> - S3 security: SSE, KMS         | 08/24/2025 | 08/24/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Static Website Hosting with S3 <br> - **Practice**: upload HTML web             | 08/25/2025 | 08/25/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab: <br>&emsp; + 1 private bucket <br>&emsp; + 1 bucket public webpage <br>&emsp; + Lifecycle rule transfers files > 30 days to Glacier    | 08/26/2025 | 08/26/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br>&emsp; + 1 private bucket <br>&emsp; + 1 bucket public webpage <br>&emsp; + Lifecycle rule transfers files > 30 days to Glacier    | 08/26/2025 | 08/26/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 3 Achievements:

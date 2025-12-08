@@ -19,7 +19,7 @@ pre: " <b> 1.3. </b> "
 | 3   | - Versioning   <br>    - Lifecycle Rules    <br>    - Logging                          | 23/08/2025   | 23/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - S3 Storage Classes (Standard, IA, Glacier)    <br>    - S3 security: SSE, KMS        | 24/08/2025   | 24/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Static Website Hosting with S3    <br>    - **Thực hành**: upload web HTML           | 25/08/2025   | 25/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab:  <br>&emsp;  + 1 bucket private <br>&emsp; + 1 bucket public webpage <br>&emsp;  + Lifecycle rule chuyển file > 30 ngày sang Glacier         | 26/08/2025   | 26/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:**  <br>&emsp;  + 1 bucket private <br>&emsp; + 1 bucket public webpage <br>&emsp;  + Lifecycle rule chuyển file > 30 ngày sang Glacier         | 26/08/2025   | 26/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 3:

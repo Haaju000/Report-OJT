@@ -20,7 +20,7 @@ pre: " <b> 1.6. </b> "
 | 3   | - CloudWatch Logs   <br>     - View EC2 / Lambda logs                              | 09/14/2025 | 09/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Alarms: CPU, Network, Errors   <br>    - SNS notification                        | 09/15/2025 | 09/15/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - CloudTrail: record IAM activity    <br>    - Security audit                      | 09/16/2025 | 09/16/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Lab: <br> + Create CloudWatch alarm for EC2 CPU <br> + Send SNS email <br> + Enable CloudTrail             | 09/17/2025 | 09/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + Create CloudWatch alarm for EC2 CPU <br> + Send SNS email <br> + Enable CloudTrail             | 09/17/2025 | 09/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:

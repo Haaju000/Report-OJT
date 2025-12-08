@@ -20,7 +20,7 @@ pre: " <b> 1.6. </b> "
 | 3   | - Nhật ký CloudWatch    <br>     - Xem nhật ký EC2 / Lambda             | 14/09/2025 | 12/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Báo động: CPU, Mạng, Lỗi   <br>    - Thông báo SNS                    | 15/09/2025 | 15/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - CloudTrail: ghi lại hoạt động IAM  <br>    - Kiểm tra bảo mật         | 16/09/2025 | 16/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Thực hành: <br> + Tạo báo động CloudWatch cho CPU EC2 <br> + Gửi email SNS <br> + Kích hoạt CloudTrail            | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br> + Tạo báo động CloudWatch cho CPU EC2 <br> + Gửi email SNS <br> + Kích hoạt CloudTrail            | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Thành tích Tuần 6:
 
