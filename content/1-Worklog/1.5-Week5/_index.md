@@ -10,17 +10,25 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand and deploy RDS (create database, configure parameter/option group, connect from EC2, set up Backup – Multi-AZ – Read Replica).
+* Use DynamoDB, understand table structure (partition key, sort key) and create sample tables.
+* Build an EC2 application that connects to RDS, has automatic backup and integrates an additional DynamoDB table to store test data.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   |                        | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   |                        | 08/16/2025 | 08/16/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   |                        | 08/17/2025 | 08/17/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   |                        | 08/18/2025 | 08/18/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   |                        | 08/19/2025 | 08/19/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Overview RDS  <br>    - Parameter group, Option group                                       | 09/06/2025 | 09/06/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Create RDS MySQL/PostgreSQL   <br>    - Connect from EC2                                    | 09/07/2025 | 09/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Backup, Multi-AZ, Read Replica                                                              | 09/08/2025 | 09/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - DynamoDB: Table, Partition key, Sort key                                                    | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Weekly lab: <br> + App on EC2 → Connect RDS <br> + Configure automatic backup <br> + Create sample DynamoDB table                    | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+
 
 
 ### Week 5 Achievements:
+
+* Successfully deploy and operate RDS: create database, configure parameter/option group, connect from EC2, and set up Backup – Multi-AZ – Read Replica.
+
+* Build an application running on EC2 connecting to RDS and operating stably with automatic backup mechanism.
+
+* Create and manage sample DynamoDB table, understand how to design partition key, sort key and how to access basic data.
