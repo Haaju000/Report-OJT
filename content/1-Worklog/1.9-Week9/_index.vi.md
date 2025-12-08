@@ -21,7 +21,7 @@ pre: " <b> 1.9. </b> "
 | 3  | - Lưu trữ S3 + CloudFront                                                                    | 04/10/2025 | 04/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4  | - Tuyến 53: tên miền & vùng lưu trữ                                                          | 05/10/2025 | 05/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5  | - Chính sách định tuyến: Đơn giản, Có trọng số, Độ trễ                                       | 06/10/2025 | 06/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6  | - Phòng thí nghiệm hàng tuần: <br> + Đăng ký tên miền <br> + Thiết lập CloudFront CDN <br> + Triển khai web tĩnh S3    | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6  | - **Thực hành:** <br> + Đăng ký tên miền <br> + Thiết lập CloudFront CDN <br> + Triển khai web tĩnh S3    | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 9:

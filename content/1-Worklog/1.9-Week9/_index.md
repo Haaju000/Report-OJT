@@ -21,7 +21,7 @@ pre: " <b> 1.9. </b> "
 | 3   | - S3 + CloudFront hosting                                                                    | 10/04/2025 | 10/04/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Route 53: domain & hosted zone                                                             | 10/05/2025 | 10/05/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Routing policies: Simple, Weighted, Latency                                                | 10/06/2025 | 10/06/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Weekly lab: <br> + Register domain <br> + Setup CloudFront CDN <br> + Deploy S3 static web | 10/07/2025 | 10/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + Register domain <br> + Setup CloudFront CDN <br> + Deploy S3 static web | 10/07/2025 | 10/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

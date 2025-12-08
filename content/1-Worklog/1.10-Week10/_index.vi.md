@@ -10,17 +10,24 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững quy trình CI/CD: từ quản lý mã nguồn với Git/GitHub đến tự động build & deploy bằng CodeBuild và CodePipeline.
+* Thiết lập pipeline tự động hoàn chỉnh: push code → build → deploy lên S3 hoặc Lambda một cách tự động.
+* Thực hành triển khai thực tế: hoàn tất lab tuần với pipeline hoạt động trơn tru từ đầu đến cuối.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Hiểu EC2: AMI, Instance Type, Security Group  <br>    - Thực hành: chạy 1 EC2                                                | 15/08/2025   | 15/08/2025      |<https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Kết nối SSH vào EC2   <br>    - Linux cơ bản (cd, ls, nano, service, install package)                            | 16/08/2025   | 16/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   |          | 17/08/2025   | 17/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   |                   | 18/08/2025   | 18/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   |           | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Kiến thức cơ bản về Git & GitHub     <br>   - Tạo kho lưu trữ                       | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Kiến thức cơ bản về CodeCommit / CodeBuild                                          | 10/11/2025 | 10/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - CodePipeline: quy trình build → deploy                                              | 10/12/2025 | 10/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Tự động triển khai lên S3 hoặc Lambda                                               | 10/13/2025 | 10/13/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br>  + Đẩy mã → triển khai tự động <br> + Hoàn tất quy trình CI/CD  | 14/10/2025 | 14/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 10:
+
+* Tạo và quản lý Git/GitHub repo thành thạo, thực hiện push/pull/branch đúng quy trình.
+
+* Xây dựng hoàn chỉnh pipeline với CodeBuild + CodePipeline để tự động build và deploy.
+
+* Triển khai ứng dụng tự động lên S3 hoặc Lambda, xác nhận pipeline chạy end-to-end khi push code.
