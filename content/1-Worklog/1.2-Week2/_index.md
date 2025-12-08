@@ -14,42 +14,23 @@ pre: " <b> 1.2. </b> "
 * Understand basic AWS services, how to use the console & CLI.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/15/2025 | 08/15/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/16/2025 | 08/16/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/17/2025 | 08/17/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/18/2025 | 08/18/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/19/2025 | 08/19/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Resource |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Understanding EC2: AMI, Instance Type, Security Group <br> - Practice: run 1 EC2 | 08/15/2025 | 08/15/2025 |<https://cloudjourney.awsstudygroup.com/> |
+| 3 | - SSH connection to EC2 <br> - Basic Linux (cd, ls, nano, service, install package) | 08/16/2025 | 08/16/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - EBS Volume: attach, detach, snapshot <br> - Practice: create separate volume and attach to EC2 | 08/17/2025 | 08/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Elastic IP <br> - EC2 Pricing Models (On-demand, Spot, Reserved) | 08/18/2025 | 08/18/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Mini lab: <br>&emsp; + Deploy web server Apache/Nginx on EC2 <br>&emsp; + Open port 80 <br>&emsp; + Check by IP | 08/19/2025 | 08/19/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Week 2 Achievements:
+### Results achieved in week 2:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Successfully created and operated an EC2 instance, knowing how AMI, Instance Type and Security Group work.
 
-* Successfully created and configured an AWS Free Tier account.
+* Connect to EC2 via SSH and basic Linux operations.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Manage EBS storage
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Deploy a web server (Apache/Nginx) on EC2
 
-* Used AWS CLI to perform basic operations such as:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

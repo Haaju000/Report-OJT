@@ -10,48 +10,27 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững cách khởi tạo, quản lý và kết nối vào EC2, kèm theo các khái niệm trọng yếu như AMI, Instance Type, Security Group, EBS và Elastic IP.
+* Thực hành thành thạo thao tác Linux cơ bản và triển khai một web server chạy được trên EC2, truy cập được qua trình duyệt.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 15/08/2025   | 15/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 16/08/2025   | 16/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 17/08/2025   | 17/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 18/08/2025   | 18/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Hiểu EC2: AMI, Instance Type, Security Group  <br>    - Thực hành: chạy 1 EC2             | 15/08/2025   | 15/08/2025      |<https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Kết nối SSH vào EC2   <br>    - Linux cơ bản (cd, ls, nano, service, install package)     | 16/08/2025   | 16/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - EBS Volume: attach, detach, snapshot  <br>    - Thực hành: tạo volume riêng rồi gắn vào EC2       | 17/08/2025   | 17/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Elastic IP <br>   - EC2 Pricing Models (On-demand, Spot, Reserved)                       | 18/08/2025   | 18/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Lab mini:  <br>&emsp; + Deploy web server Apache/Nginx trên EC2 <br>&emsp;   + Mở port 80 <br>&emsp;  + Kiểm tra bằng IP         | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Tự tạo và vận hành một EC2 instance thành công, biết được AMI, Instance Type và Security Group hoạt động như thế nào.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Kết nối EC2 qua SSH và thao tác Linux cơ bản.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Quản lý lưu trữ EBS
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Triển khai được web server (Apache/Nginx) trên EC2
 
 
