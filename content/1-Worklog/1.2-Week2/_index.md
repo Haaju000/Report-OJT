@@ -14,8 +14,8 @@ pre: " <b> 1.2. </b> "
 * Understand basic AWS services, how to use the console & CLI.
 
 ### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Resource |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | ----------------------------------------- |
+| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 | 2 | - Understanding EC2: AMI, Instance Type, Security Group <br> - Practice: run 1 EC2                        | 08/15/2025 | 08/15/2025 |<https://cloudjourney.awsstudygroup.com/> |
 | 3 | - SSH connection to EC2 <br> - Basic Linux (cd, ls, nano, service, install package)                       | 08/16/2025 | 08/16/2025 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - EBS Volume: attach, detach, snapshot <br> - **Practice**: create separate volume and attach to EC2      | 08/17/2025 | 08/17/2025 | <https://cloudjourney.awsstudygroup.com/> |

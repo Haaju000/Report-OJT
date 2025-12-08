@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                     | 08/09/2025   | 08/09/2025     |<https://policies.fcjuni.com/>
-| 3   | - Tìm hiểu AWS và các loại dịch vụ                                            | 09/09/2025   | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Thực hành:** <br>&emsp; + Tạo AWS Free Tier account <br>&emsp; + Tìm hiểu AWS Console & AWS CLI <br> | 10/09/2025   | 10/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>- Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 11/09/2025   | 11/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 12/09/2025   | 12/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập             | 08/09/2025   | 08/09/2025   | <https://policies.fcjuni.com/>
+| 3   | - Tìm hiểu AWS và các loại dịch vụ                                                                          | 09/09/2025   | 09/09/2025   | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - **Thực hành:** <br>&emsp; + Tạo AWS Free Tier account <br>&emsp; + Tìm hiểu AWS Console & AWS CLI <br>    | 10/09/2025   | 10/09/2025   | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tìm hiểu EC2 cơ bản: <br>- Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 11/09/2025   | 11/09/2025   | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume         | 12/09/2025   | 12/09/2025   | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 1:

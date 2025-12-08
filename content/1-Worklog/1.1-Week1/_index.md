@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/09/2025 | 08/09/2025      |<https://policies.fcjuni.com/>
-| 3   | - Learn about AWS and its types of services                                 | 09/09/2025 | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                  | 08/09/2025 | 08/09/2025      |<https://policies.fcjuni.com/>
+| 3   | - Learn about AWS and its types of services                                                          | 09/09/2025 | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - **Practice:** <br>&emsp;  + Create AWS Free Tier account <br>&emsp; + Learn AWS Console & AWS CLI  | 10/09/2025 | 10/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br> - Ways to remote SSH into EC2 <br> - Understanding Elastic IP                         | 11/09/2025 | 11/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 12/09/2025 | 12/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn basic EC2: <br> - Ways to remote SSH into EC2 <br> - Understanding Elastic IP                | 11/09/2025 | 11/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                 | 12/09/2025 | 12/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:
