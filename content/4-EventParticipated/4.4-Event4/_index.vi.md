@@ -21,8 +21,7 @@ pre: " <b> 4.4. </b> "
 
 ### Danh Sách Diễn Giả
 
-- ** ** - 
-- ** ** -
+**Chuyên gia DevOps của AWS**
 
 ### Nội Dung Nổi Bật
 

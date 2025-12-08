@@ -20,8 +20,7 @@ pre: " <b> 4.4. </b> "
 
 ### Speakers
 
-- ** ** - 
-- ** ** - 
+**AWS ​DevOps Specialists**
 
 ### Key Highlights
 

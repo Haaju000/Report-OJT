@@ -18,8 +18,7 @@ pre: " <b> 4.3. </b> "
 
 ### Danh Sách Diễn Giả
 
-- ** ** - 
-- ** ** -
+**Kiến trúc sư giải pháp AWS Việt Nam & Chuyên gia AI/ML**
 
 ### Nội Dung Nổi Bật
 

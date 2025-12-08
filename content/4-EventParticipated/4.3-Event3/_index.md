@@ -18,8 +18,7 @@ pre: " <b> 4.3. </b> "
 
 ### Speakers
 
-- ** ** - 
-- ** ** - 
+**AWS Vietnam Solutions Architects & AI/ML Specialists**
 
 ### Key Highlights
 

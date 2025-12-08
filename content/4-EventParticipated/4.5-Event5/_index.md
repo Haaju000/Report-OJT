@@ -20,8 +20,7 @@ pre: " <b> 4.5. </b> "
 
 ### Speakers
 
-- ** ** - 
-- ** ** - 
+**AWS Security Specialists & Solutions Architects**
 
 ### Key Highlights
 

@@ -20,8 +20,8 @@ pre: " <b> 4.5. </b> "
 
 ### Danh Sách Diễn Giả
 
-- ** ** - 
-- ** ** -
+**Chuyên gia bảo mật và kiến ​​trúc sư giải pháp AWS**
+
 
 ### Nội Dung Nổi Bật
 
