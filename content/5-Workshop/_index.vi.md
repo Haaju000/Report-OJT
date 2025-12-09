@@ -1,33 +1,100 @@
 ---
 title: "Workshop"
-date: ""
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Coffee Cloud Platform - AWS Workshop Series
 
+Các workshop thực hành xây dựng Coffee Shop Order Platform trên AWS từ đầu đến cuối.
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+## 🎯 Tổng quan Workshop
 
-#### Tổng quan
+Trong series workshop này, bạn sẽ học cách xây dựng một ứng dụng web full-stack trên AWS, bao gồm frontend với ReactJS + Amplify và backend .NET API với Elastic Beanstalk.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**Coffee Cloud Platform** là một ứng dụng đặt hàng cà phê online với các tính năng:
+- 🛒 Đặt hàng và thanh toán online
+- 👥 Hệ thống phân quyền 3 nhóm: Customer, Shipper, Admin
+- ⭐ Tích điểm và đổi voucher
+- 📍 Theo dõi giao hàng real-time với GPS
+- 📊 Dashboard quản lý cho Admin
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+---
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+## 📚 Series Workshop
 
-#### Nội dung
+### Workshop Cốt lõi
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+#### 1. [Deploy ReactJS Frontend với AWS Amplify](5.1-amplify-frontend/)
+⏱️ **90 phút** | 🎯 **Beginner-Intermediate**
+
+Tạo và deploy ứng dụng ReactJS lên AWS Amplify với CI/CD tự động từ GitHub. Học cách setup pipeline, configure build settings, và optimize performance.
+
+**Bạn sẽ học:**
+- Tạo React app với Vite
+- Setup Git repository
+- Deploy lên AWS Amplify
+- Configure CI/CD pipeline
+- Environment variables và build optimization
+
+---
+
+#### 2. [Deploy .NET Backend với AWS Elastic Beanstalk](5.2-EB-backend/)
+⏱️ **60-90 phút** | 🎯 **Intermediate**
+
+Deploy .NET 8.0 Web API lên AWS Elastic Beanstalk với Swagger UI. Học về publish application, ZIP deployment, và integration với frontend qua Cloudflare Tunnel.
+
+**Bạn sẽ học:**
+- Publish .NET 8.0 application
+- Deploy lên Elastic Beanstalk qua AWS Console
+- Test API với Swagger UI
+- Setup Cloudflare Tunnel cho HTTPS
+- Connect backend với Amplify frontend
+
+---
+
+## 📋 Yêu cầu Trước khi Bắt đầu
+
+Trước khi bắt đầu, đảm bảo bạn có:
+- ✅ AWS Account (Free Tier eligible)
+- ✅ GitHub account
+- ✅ Node.js 18+ và npm
+- ✅ .NET 8.0 SDK
+- ✅ Git installed
+- ✅ Code editor (VS Code khuyến nghị)
+- ✅ Hiểu biết cơ bản về React, JavaScript, và C#
+
+---
+
+## 💰 Ước tính Chi phí
+
+Với **AWS Free Tier**, tổng chi phí workshops:
+
+| Dịch vụ | Free Tier | Sau Free Tier |
+|---------|-----------|---------------|
+| **Amplify** | 1000 build minutes/tháng | $0.01/phút |
+| **Elastic Beanstalk** | 750 giờ/tháng (t3.micro) | ~$10/tháng |
+| **DynamoDB** | 25 GB storage | $0.25/GB |
+| **CloudWatch** | 10 custom metrics | $0.30/metric |
+| **Data Transfer** | 15 GB/tháng | $0.09/GB |
+
+**Tổng ước tính chi phí:** $0-5/tháng trong giai đoạn học
+
+---
+
+## 🚀 Bắt đầu
+
+Bắt đầu với [Workshop 1: Deploy Frontend với AWS Amplify](5.1-amplify-frontend/)
+
+---
+
+## 📖 Tài liệu Bổ sung
+
+- [AWS Free Tier](https://aws.amazon.com/free/)
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [React Documentation](https://react.dev/)
+- [.NET Documentation](https://learn.microsoft.com/en-us/dotnet/)
+- [Coffee Cloud Proposal](../2-Proposal/)
+
+---

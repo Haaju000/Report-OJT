@@ -1,31 +1,102 @@
 ---
 title: "Workshop"
-date: ""
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Coffee Cloud Platform - AWS Workshop Series
 
-#### Overview
+Hands-on workshops to build Coffee Shop Order Platform on AWS from start to finish.
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+## 🎯 Workshop Overview
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+In this workshop series, you'll learn how to build a full-stack web application on AWS, including frontend with ReactJS + Amplify and backend .NET API with Elastic Beanstalk.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+**Coffee Cloud Platform** is an online coffee ordering application with features:
+- 🛒 Online ordering and payment
+- 👥 3-role authorization system: Customer, Shipper, Admin
+- ⭐ Points accumulation and voucher redemption
+- 📍 Real-time delivery tracking with GPS
+- 📊 Admin management dashboard
 
-#### Content
+---
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+## 📚 Workshop Series
+
+### Core Workshops
+
+#### 1. [Deploy ReactJS Frontend with AWS Amplify](5.1-amplify-frontend/)
+⏱️ **90 minutes** | 🎯 **Beginner-Intermediate**
+
+Create and deploy a ReactJS application to AWS Amplify with automatic CI/CD from GitHub. Learn how to setup pipeline, configure build settings, and optimize performance.
+
+**You will learn:**
+- Create React app with Vite
+- Setup Git repository
+- Deploy to AWS Amplify
+- Configure CI/CD pipeline
+- Environment variables and build optimization
+
+---
+
+#### 2. [Deploy .NET Backend with AWS Elastic Beanstalk](5.2-EB-backend/)
+⏱️ **60-90 minutes** | 🎯 **Intermediate**
+
+Deploy .NET 8.0 Web API to AWS Elastic Beanstalk with Swagger UI. Learn about publishing application, ZIP deployment, and integration with frontend via Cloudflare Tunnel.
+
+**You will learn:**
+- Publish .NET 8.0 application
+- Deploy to Elastic Beanstalk via AWS Console
+- Test API with Swagger UI
+- Setup Cloudflare Tunnel for HTTPS
+- Connect backend with Amplify frontend
+
+
+---
+
+## 📋 Prerequisites
+
+Before starting, make sure you have:
+- ✅ AWS Account (Free Tier eligible)
+- ✅ GitHub account
+- ✅ Node.js 18+ and npm
+- ✅ .NET 8.0 SDK
+- ✅ Git installed
+- ✅ Code editor (VS Code recommended)
+- ✅ Basic understanding of React, JavaScript, and C#
+
+---
+
+## 💰 Cost Estimation
+
+With **AWS Free Tier**, total workshop costs:
+
+| Service | Free Tier | After Free Tier |
+|---------|-----------|-----------------|
+| **Amplify** | 1000 build minutes/month | $0.01/min |
+| **Elastic Beanstalk** | 750 hours/month (t3.micro) | ~$10/month |
+| **DynamoDB** | 25 GB storage | $0.25/GB |
+| **CloudWatch** | 10 custom metrics | $0.30/metric |
+| **Data Transfer** | 15 GB/month | $0.09/GB |
+
+**Total estimated cost:** $0-5/month during learning phase
+
+---
+
+## 🚀 Getting Started
+
+Start with [Workshop 1: Deploy Frontend with AWS Amplify](5.1-amplify-frontend/)
+
+---
+
+## 📖 Additional Resources
+
+- [AWS Free Tier](https://aws.amazon.com/free/)
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [React Documentation](https://react.dev/)
+- [.NET Documentation](https://learn.microsoft.com/en-us/dotnet/)
+- [Coffee Cloud Proposal](../2-Proposal/)
+
+---
+
