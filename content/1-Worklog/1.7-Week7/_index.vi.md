@@ -17,11 +17,11 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Elastic Load Balancer (ALB, NLB)     <br>    - Tạo ALB                                  | 20/09/2025 | 20/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Nhóm mục tiêu    <br>    - Kiểm tra tình trạng                                          | 21/09/2025 | 21/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Nhóm Tự động Điều chỉnh Quy mô (ASG)     <br>    - Khởi chạy Mẫu                        | 22/09/2025 | 22/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Chính sách Điều chỉnh Quy mô     <br>    - Điều chỉnh Quy mô Theo lịch trình & Động     | 23/09/2025 | 23/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - **Thực hành:** <br> + ALB + ASG  <br>    + Tự động điều chỉnh tỷ lệ khi CPU > 60%       | 24/09/2025 | 24/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Elastic Load Balancer (ALB, NLB)     <br>    - Tạo ALB                                  | 20/10/2025 | 20/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Nhóm mục tiêu    <br>    - Kiểm tra tình trạng                                          | 21/10/2025 | 21/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Nhóm Tự động Điều chỉnh Quy mô (ASG)     <br>    - Khởi chạy Mẫu                        | 22/10/2025 | 22/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Chính sách Điều chỉnh Quy mô     <br>    - Điều chỉnh Quy mô Theo lịch trình & Động     | 23/10/2025 | 23/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br> + ALB + ASG  <br>    + Tự động điều chỉnh tỷ lệ khi CPU > 60%       | 24/10/2025 | 24/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 7:
 

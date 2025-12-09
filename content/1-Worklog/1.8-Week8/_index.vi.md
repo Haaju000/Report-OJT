@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2  | - Cơ bản về hàm Lambda    <br>    - Trình xử lý, thời gian chạy, thời gian chờ                | 27/09/2025 | 27/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3  | - Kích hoạt S3 → Sự kiện Lambda                                                               | 28/09/2025 | 28/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4  | - Cổng API → Lambda   <br>   - Tạo API REST                                                   | 29/09/2025 | 29/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5  | - Vai trò IAM cho Lambda  <br>    - Ghi nhật ký CloudWatch                                    | 30/09/2025 | 30/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6  | - **Thực hành:**    <br>    + API Gateway → Lambda → DynamoDB <br> + Nhật ký với CloudWatch   | 31/09/2025 | 31/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2  | - Cơ bản về hàm Lambda    <br>    - Trình xử lý, thời gian chạy, thời gian chờ                | 27/10/2025 | 27/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3  | - Kích hoạt S3 → Sự kiện Lambda                                                               | 28/10/2025 | 28/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4  | - Cổng API → Lambda   <br>   - Tạo API REST                                                   | 29/10/2025 | 29/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5  | - Vai trò IAM cho Lambda  <br>    - Ghi nhật ký CloudWatch                                    | 30/10/2025 | 30/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6  | - **Thực hành:**    <br>    + API Gateway → Lambda → DynamoDB <br> + Nhật ký với CloudWatch   | 31/10/2025 | 31/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 8:

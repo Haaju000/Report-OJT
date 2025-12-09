@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Chỉ số CloudWatch   <br>  - Chỉ số tùy chỉnh                          | 13/09/2025 | 11/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Nhật ký CloudWatch    <br>     - Xem nhật ký EC2 / Lambda             | 14/09/2025 | 12/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Báo động: CPU, Mạng, Lỗi   <br>    - Thông báo SNS                    | 15/09/2025 | 15/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - CloudTrail: ghi lại hoạt động IAM  <br>    - Kiểm tra bảo mật         | 16/09/2025 | 16/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br> + Tạo báo động CloudWatch cho CPU EC2 <br> + Gửi email SNS <br> + Kích hoạt CloudTrail            | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Chỉ số CloudWatch   <br>  - Chỉ số tùy chỉnh                          | 13/10/2025 | 11/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Nhật ký CloudWatch    <br>     - Xem nhật ký EC2 / Lambda             | 14/10/2025 | 12/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Báo động: CPU, Mạng, Lỗi   <br>    - Thông báo SNS                    | 15/10/2025 | 15/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - CloudTrail: ghi lại hoạt động IAM  <br>    - Kiểm tra bảo mật         | 16/10/2025 | 16/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br> + Tạo báo động CloudWatch cho CPU EC2 <br> + Gửi email SNS <br> + Kích hoạt CloudTrail            | 17/10/2025 | 17/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Thành tích Tuần 6:
 

@@ -17,11 +17,11 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Git & GitHub basics    <br>    - Create repository                                         | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - CodeCommit / CodeBuild basics                                                              | 10/11/2025 | 10/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - CodePipeline: build → deploy flow                                                          | 10/12/2025 | 10/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Automated deploy to S3 or Lambda                                                           | 10/13/2025 | 10/13/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:**    <br>        + Push code → auto deploy <br> + CI/CD pipeline complete      | 10/14/2025 | 10/14/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Git & GitHub basics    <br>    - Create repository                                         | 11/10/2025 | 11/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - CodeCommit / CodeBuild basics                                                              | 11/11/2025 | 11/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - CodePipeline: build → deploy flow                                                          | 11/12/2025 | 11/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Automated deploy to S3 or Lambda                                                           | 11/13/2025 | 11/13/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:**    <br>        + Push code → auto deploy <br> + CI/CD pipeline complete      | 11/14/2025 | 11/14/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

@@ -17,11 +17,11 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Kiến thức cơ bản về Git & GitHub     <br>   - Tạo kho lưu trữ                       | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Kiến thức cơ bản về CodeCommit / CodeBuild                                          | 10/11/2025 | 10/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - CodePipeline: quy trình build → deploy                                              | 10/12/2025 | 10/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Tự động triển khai lên S3 hoặc Lambda                                               | 10/13/2025 | 10/13/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - **Thực hành:** <br>  + Đẩy mã → triển khai tự động <br> + Hoàn tất quy trình CI/CD  | 14/10/2025 | 14/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Kiến thức cơ bản về Git & GitHub     <br>   - Tạo kho lưu trữ                       | 10/11/2025 | 10/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Kiến thức cơ bản về CodeCommit / CodeBuild                                          | 11/11/2025 | 11/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - CodePipeline: quy trình build → deploy                                              | 12/11/2025 | 12/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Tự động triển khai lên S3 hoặc Lambda                                               | 13/11/2025 | 13/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br>  + Đẩy mã → triển khai tự động <br> + Hoàn tất quy trình CI/CD  | 14/11/2025 | 14/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 10:

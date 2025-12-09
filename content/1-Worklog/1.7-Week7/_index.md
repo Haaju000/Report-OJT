@@ -16,11 +16,11 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Elastic Load Balancer (ALB, NLB)   <br>   - Create ALB                    | 09/20/2025 | 09/20/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Target Group  <br>     - Health check                                     | 09/21/2025 | 09/21/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Auto Scaling Group (ASG)   <br>    - Launch Template                      | 09/22/2025 | 09/22/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Scaling Policies   <br>   - Scheduled & Dynamic Scaling                   | 09/23/2025 | 09/23/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br> + ALB + ASG <br> + Autoscale when CPU > 60%            | 09/24/2025 | 09/24/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Elastic Load Balancer (ALB, NLB)   <br>   - Create ALB                    | 10/20/2025 | 10/20/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Target Group  <br>     - Health check                                     | 10/21/2025 | 10/21/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Auto Scaling Group (ASG)   <br>    - Launch Template                      | 10/22/2025 | 10/22/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Scaling Policies   <br>   - Scheduled & Dynamic Scaling                   | 10/23/2025 | 10/23/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + ALB + ASG <br> + Autoscale when CPU > 60%            | 10/24/2025 | 10/24/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

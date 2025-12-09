@@ -17,11 +17,11 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Overview RDS  <br>    - Parameter group, Option group                                       | 09/06/2025 | 09/06/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Create RDS MySQL/PostgreSQL   <br>    - Connect from EC2                                    | 09/07/2025 | 09/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Backup, Multi-AZ, Read Replica                                                              | 09/08/2025 | 09/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - DynamoDB: Table, Partition key, Sort key                                                    | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br> + App on EC2 → Connect RDS <br> + Configure automatic backup <br> + Create sample DynamoDB table                    | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Overview RDS  <br>    - Parameter group, Option group                                       | 10/06/2025 | 10/06/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Create RDS MySQL/PostgreSQL   <br>    - Connect from EC2                                    | 10/07/2025 | 10/07/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Backup, Multi-AZ, Read Replica                                                              | 10/08/2025 | 10/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - DynamoDB: Table, Partition key, Sort key                                                    | 10/09/2025 | 10/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + App on EC2 → Connect RDS <br> + Configure automatic backup <br> + Create sample DynamoDB table                    | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

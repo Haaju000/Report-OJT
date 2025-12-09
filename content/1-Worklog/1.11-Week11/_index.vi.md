@@ -16,11 +16,11 @@ pre: " <b> 1.11. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Thiết kế kiến ​​trúc dự án <br> (Frontend + Backend + DB)                     | 17/10/2025 | 17/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Xây dựng VPC + mạng                                                         | 18/10/2025 | 18/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Triển khai backend EC2/Lambda + RDS                                         | 19/10/2025 | 19/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Triển khai frontend S3 + CloudFront + Domain                                | 20/10/2025 | 20/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - **Thực hành:** <br> + Kiểm tra tải <br> + Kiểm tra khả năng mở rộng <br> + Giám sát & Xem lại nhật ký | 21/10/2025 | 21/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Thiết kế kiến ​​trúc dự án <br> (Frontend + Backend + DB)                     | 17/11/2025 | 17/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Xây dựng VPC + mạng                                                         | 18/11/2025 | 18/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Triển khai backend EC2/Lambda + RDS                                         | 19/11/2025 | 19/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Triển khai frontend S3 + CloudFront + Domain                                | 20/11/2025 | 20/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br> + Kiểm tra tải <br> + Kiểm tra khả năng mở rộng <br> + Giám sát & Xem lại nhật ký | 21/11/2025 | 21/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 11:

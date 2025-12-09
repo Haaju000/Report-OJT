@@ -17,11 +17,11 @@ pre: " <b> 1.4. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Khái niệm VPC, CIDR, IPv4, subnet <br>    - Public và Private subnet            | 29/08/2025   | 29/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Route Table   <br>    - Internet Gateway  <br> NAT Gateway                      | 30/08/2025   | 30/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Security Group vs NACL <br>   - **Thực hành**: tạo VPC mới + 2 subnet           | 01/09/2025   | 01/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Thực hành cấu hình mạng hoàn chỉnh   <br>&emsp;  + VPC <br>&emsp; + Public subnet + EC2 <br>&emsp; + Private subnet         | 02/09/2025   | 02/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp;  + Deploy 1 EC2 public, 1 EC2 private <br>&emsp; + Kiểm tra private EC2 có ra Internet bằng NAT        | 03/09/2025   | 03/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Khái niệm VPC, CIDR, IPv4, subnet <br>    - Public và Private subnet            | 29/09/2025   | 29/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Route Table   <br>    - Internet Gateway  <br> NAT Gateway                      | 30/09/2025   | 30/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Security Group vs NACL <br>   - **Thực hành**: tạo VPC mới + 2 subnet           | 01/10/2025   | 01/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Thực hành cấu hình mạng hoàn chỉnh   <br>&emsp;  + VPC <br>&emsp; + Public subnet + EC2 <br>&emsp; + Private subnet         | 02/10/2025   | 02/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp;  + Deploy 1 EC2 public, 1 EC2 private <br>&emsp; + Kiểm tra private EC2 có ra Internet bằng NAT   | 03/10/2025   | 03/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:

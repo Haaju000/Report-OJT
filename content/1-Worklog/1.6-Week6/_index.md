@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - CloudWatch Metrics    <br>     - Custom Metrics                                  | 09/13/2025 | 09/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - CloudWatch Logs   <br>     - View EC2 / Lambda logs                              | 09/14/2025 | 09/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Alarms: CPU, Network, Errors   <br>    - SNS notification                        | 09/15/2025 | 09/15/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - CloudTrail: record IAM activity    <br>    - Security audit                      | 09/16/2025 | 09/16/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br> + Create CloudWatch alarm for EC2 CPU <br> + Send SNS email <br> + Enable CloudTrail             | 09/17/2025 | 09/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - CloudWatch Metrics    <br>     - Custom Metrics                                  | 10/13/2025 | 10/11/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - CloudWatch Logs   <br>     - View EC2 / Lambda logs                              | 10/14/2025 | 10/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Alarms: CPU, Network, Errors   <br>    - SNS notification                        | 10/15/2025 | 10/15/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - CloudTrail: record IAM activity    <br>    - Security audit                      | 10/16/2025 | 10/16/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + Create CloudWatch alarm for EC2 CPU <br> + Send SNS email <br> + Enable CloudTrail             | 10/17/2025 | 10/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:

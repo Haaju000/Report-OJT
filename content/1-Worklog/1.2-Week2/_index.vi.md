@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Hiểu EC2: AMI, Instance Type, Security Group  <br>    - Thực hành: chạy 1 EC2                         | 15/08/2025   | 15/08/2025      |<https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Kết nối SSH vào EC2   <br>    - Linux cơ bản (cd, ls, nano, service, install package)                 | 16/08/2025   | 16/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - EBS Volume: attach, detach, snapshot  <br>    - **Thực hành**: tạo volume riêng rồi gắn vào EC2       | 17/08/2025   | 17/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Elastic IP <br>   - EC2 Pricing Models (On-demand, Spot, Reserved)                                    | 18/08/2025   | 18/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:**  <br>&emsp; + Deploy web server Apache/Nginx trên EC2 <br>&emsp;   + Mở port 80 <br>&emsp;  + Kiểm tra bằng IP          | 19/08/2025   | 19/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Hiểu EC2: AMI, Instance Type, Security Group  <br>    - Thực hành: chạy 1 EC2                         | 15/09/2025   | 15/09/2025      |<https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Kết nối SSH vào EC2   <br>    - Linux cơ bản (cd, ls, nano, service, install package)                 | 16/09/2025   | 16/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - EBS Volume: attach, detach, snapshot  <br>    - **Thực hành**: tạo volume riêng rồi gắn vào EC2       | 17/09/2025   | 17/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Elastic IP <br>   - EC2 Pricing Models (On-demand, Spot, Reserved)                                    | 18/09/2025   | 18/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:**  <br>&emsp; + Deploy web server Apache/Nginx trên EC2 <br>&emsp;   + Mở port 80 <br>&emsp;  + Kiểm tra bằng IP          | 19/09/2025   | 19/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:

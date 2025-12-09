@@ -16,11 +16,11 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Project architecture design <br> (Frontend + Backend + DB)                        | 10/17/2025 | 10/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Build VPC + networking                                                            | 10/18/2025 | 10/18/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Deploy backend EC2/Lambda + RDS                                                   | 10/19/2025 | 10/19/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Deploy frontend S3 + CloudFront + Domain                                          | 10/20/2025 | 10/20/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br> + Load test <br> + Scaling test <br> + Monitoring & Log review | 10/21/2025 | 10/21/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Project architecture design <br> (Frontend + Backend + DB)                        | 11/17/2025 | 11/17/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Build VPC + networking                                                            | 11/18/2025 | 11/18/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Deploy backend EC2/Lambda + RDS                                                   | 11/19/2025 | 11/19/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Deploy frontend S3 + CloudFront + Domain                                          | 11/20/2025 | 11/20/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br> + Load test <br> + Scaling test <br> + Monitoring & Log review | 11/21/2025 | 11/21/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 

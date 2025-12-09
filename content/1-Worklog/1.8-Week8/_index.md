@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Lambda function basics     <br>    - Handler, runtime, timeout                        | 09/27/2025 | 09/27/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - S3 trigger → Lambda event                                                             | 09/28/2025 | 09/28/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - API Gateway → Lambda   <br>    - Create REST API                                      | 09/29/2025 | 09/29/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - IAM role for Lambda    <br>   - CloudWatch logging                                    | 09/30/2025 | 09/30/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:**  <br> + API Gateway → Lambda → DynamoDB <br> + Log with CloudWatch      | 09/31/2025 | 09/31/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Lambda function basics     <br>    - Handler, runtime, timeout                        | 10/27/2025 | 10/27/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - S3 trigger → Lambda event                                                             | 10/28/2025 | 10/28/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - API Gateway → Lambda   <br>    - Create REST API                                      | 10/29/2025 | 10/29/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - IAM role for Lambda    <br>   - CloudWatch logging                                    | 10/30/2025 | 10/30/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:**  <br> + API Gateway → Lambda → DynamoDB <br> + Log with CloudWatch      | 10/31/2025 | 10/31/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 
